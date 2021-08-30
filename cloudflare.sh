@@ -14,7 +14,7 @@ xAuthKey=${cloudflare_token}
 
 [[ -z $1 || $1 == '--help' ]] && {
     echo "
-Ferramenta da F1 para integração com a clouflare
+clouflare to bash tool
 
 Opções [parâmetros]:
     -a --add [type]         inserir novo registro na zona DNS (A, CNAME, TXT, etc)
@@ -26,7 +26,7 @@ Opções [parâmetros]:
     -z --zone [domain.com]  define o domínio registrado
 
 Uso:
-cloudflare --zone [domain.com] --new [type] --name [subdomain] --content [host] --proxy
+cloudflare --zone [domain.com] --add [type] --name [subdomain] --content [host] --proxy
 "
 exit 1
 
